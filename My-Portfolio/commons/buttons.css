@@ -14,6 +14,12 @@ button:hover {
     -webkit-focus-ring-color: rgba(255, 255, 255, 0);
 }
 
+.disabled {
+    pointer-events: none;
+    border: 2px solid rgb(221, 5, 37) !important;
+    opacity: 0.6;
+}
+
 .green-button {
     color: white;
     border: 2px solid rgb(4, 170, 109);

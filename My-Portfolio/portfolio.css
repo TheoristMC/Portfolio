@@ -1,7 +1,7 @@
-@import 'commons/fonts.css';
-@import 'commons/anims.css';
-@import 'commons/buttons.css';
-@import 'commons/dialogs.css';
+@import url('commons/fonts.css'); 
+@import url('commons/anims.css'); 
+@import url('commons/buttons.css');
+@import url('commons/dialogs.css');
 
 :root {
     --button-height: 4ch;
@@ -80,6 +80,7 @@ body {
     overflow-y: hidden;
     max-height: 3.65ch;
 }
+
 /* COMPATABILITY */
 
 @media (max-width: 539px) {}
