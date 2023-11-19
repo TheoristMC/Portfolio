@@ -40,3 +40,21 @@ button:hover {
 .gray-button:hover {
     background-color: rgb(67, 110, 67);
 }
+
+.round-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.round-button img {
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+}
+
+.round-button:hover img {
+    animation: rotate-360 1s infinite;
+}
