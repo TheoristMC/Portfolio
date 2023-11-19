@@ -1,0 +1,41 @@
+@keyframes grow-n-shrink-x {
+    from {
+        width: 7ch;
+    }
+
+    50% {
+        width: 10ch;
+    }
+
+    to {
+        width: 7ch;
+    }
+}
+
+@keyframes in-out-move-alpha {
+    from {
+        opacity: 0;
+        transform: translate(0, 80%);
+        
+        overflow: hidden;
+        height: 100%;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate();
+        
+        overflow: auto;
+        height: auto;
+    }
+}
+
+@keyframes rotate-360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

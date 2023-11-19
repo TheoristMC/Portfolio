@@ -1,0 +1,86 @@
+@import 'commons/fonts.css';
+@import 'commons/anims.css';
+@import 'commons/buttons.css';
+@import 'commons/dialogs.css';
+
+:root {
+    --button-height: 4ch;
+}
+
+body {
+    background-color: rgb(37, 37, 38);
+}
+
+/* -===== LOADING SCREEN =====- */
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: scale(1.8) translate(-50%, -50%);
+}
+
+/* -===== MAIN CONTENTS =====- */
+
+.container {
+    display: none;
+    flex-direction: column;
+    
+    animation: in-out-move-alpha 2s ease-out;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.item {
+    position: relative;
+
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 3%;
+    padding: 8px;
+    text-align: center;
+
+    width: calc(100% - 10px);
+    max-height: 18rem;
+}
+
+.newrelease::before {
+    content: "FRESH!";
+    position: absolute;
+    top: 1ch;
+    right: 1.2ch;
+    height: 2ch;
+    background-color: darkgreen;
+    border-radius: 1ch;
+
+    padding-top: 1ch;
+
+    color: white;
+    font-family: 'Minecraft', sans-serif;
+    
+    animation: grow-n-shrink-x 4s infinite ease;
+}
+
+.item img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.item p {
+    font-family: 'MinecraftFive', sans-serif;
+    font-size: 14px;
+    color: white;
+    overflow-y: hidden;
+    max-height: 3.65ch;
+}
+/* COMPATABILITY */
+
+@media (max-width: 539px) {}
+
