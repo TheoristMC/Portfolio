@@ -66,6 +66,23 @@ body {
     animation: grow-n-shrink-x 4s infinite ease;
 }
 
+.old::before {
+    content: "OLD";
+    position: absolute;
+    top: 1ch;
+    right: 1.2ch;
+    height: 2ch;
+    background-color: darkred;
+    border-radius: 1ch;
+    
+    padding-top: 0.9ch;
+    
+    color: white;
+    font-family: 'Minecraft', sans-serif;
+    
+    animation: grow-n-shrink-x 4s infinite;
+}
+
 .item img {
     width: 100%;
     height: 8rem;
